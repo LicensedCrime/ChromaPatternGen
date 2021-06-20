@@ -4,6 +4,70 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+        <section>
+            <label for="animation_type">Animation:</label>
+            <select id="animation_type">
+                <option value="0">Line</option>
+                <option value="1">Line On - Off</option>
+                <option value="2">Fade In</option>
+                <option value="3">Jump Forward</option>
+                <option value="4">Stairs</option>
+                <option value="5">Stairs Colliding</option>
+                <option value="6">Pyramid</option>
+                <option value="7">Strobe</option>
+                <option value="8">Strobe Bounce</option>
+                <option value="9">Strobe Acceleration</option>
+                <option value="10">Strobe Moving (2 Beats)</option>
+            </select>
+
+            <label for="invert">Invert Pattern</label>
+            <input id="invert" type="checkbox">
+
+            <label for="toggle">Toggle Animation</label>
+            <input id="toggle" type="checkbox">
+
+            <label for="light_type">Light Type:</label>
+            <select id="light_type">
+                <option value="0">On</option>
+                <option value="1">Off</option>
+                <option value="2">Flash</option>
+                <option value="3">Fade</option>
+            </select>
+        </section>
+
+        <section>
+            <p>customized options.... tbc...</p>
+        </section>
+
+        <section>
+            <label for="time_from">Time from:</label>
+            <input id="time_from" type="text">
+
+            <label for="time_to">Time to:</label>
+            <input id="time_to" type="text">
+        </section>
+
+        <section>
+            <label for="ring_from">Big Ring ID from:</label>
+            <input id="ring_from" type="text">
+
+            <label for="ring_to">Big Ring ID to:</label>
+            <input id="ring_to" type="text">
+        </section>
+
+
+        <section>
+            <canvas id="preview" width="600" height="400"></canvas>
+            <p>simple editor preview and simple 2 line representation of animation....</p>
+        </section>
+
+        <section>
+            <label for="output">Output:</label>
+            <textarea name="output" id="output" cols="30" rows="10"></textarea>
+
+            <button id="copy">Copy Output</button>
+        </section>
+
         <script src="js/main.js"></script>
     </body>
 </html>
